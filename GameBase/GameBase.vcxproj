@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5BBF5359-B212-4163-8E15-1A0C0FBA40F3}</ProjectGuid>
+    <RootNamespace>GameBase</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31515.66</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);D:\_Library;$(SolutionDir)\DarkTools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\DarkTools\DarkString.cpp" />
+    <ClCompile Include="..\DarkTools\DarkXML.cpp" />
+    <ClCompile Include="..\DarkTools\DarkXMLParser.cpp" />
+    <ClCompile Include="DXButton.cpp" />
+    <ClCompile Include="DXButtonCross.cpp" />
+    <ClCompile Include="DXCheckBox.cpp" />
+    <ClCompile Include="DXDropDown.cpp" />
+    <ClCompile Include="DXEditBox.cpp" />
+    <ClCompile Include="DXEngine.cpp" />
+    <ClCompile Include="DXFont.cpp" />
+    <ClCompile Include="DXHorizontalSliderBar.cpp" />
+    <ClCompile Include="DXKeyboard.cpp" />
+    <ClCompile Include="DXListBox.cpp" />
+    <ClCompile Include="DXListVerticalSlider.cpp" />
+    <ClCompile Include="DXMouse.cpp" />
+    <ClCompile Include="DXObjectBase.cpp" />
+    <ClCompile Include="DXProgressBar.cpp" />
+    <ClCompile Include="DXText.cpp" />
+    <ClCompile Include="DXTextBox.cpp" />
+    <ClCompile Include="DXTexture.cpp" />
+    <ClCompile Include="DXVariant.cpp" />
+    <ClCompile Include="DXVerticalSliderBar.cpp" />
+    <ClCompile Include="DXWindow.cpp" />
+    <ClCompile Include="GameBase.cpp" />
+    <ClCompile Include="Handlers.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\DarkTools\DarkString.h" />
+    <ClInclude Include="..\DarkTools\DarkXML.h" />
+    <ClInclude Include="..\DarkTools\DarkXMLParser.h" />
+    <ClInclude Include="DXButton.h" />
+    <ClInclude Include="DXButtonCross.h" />
+    <ClInclude Include="DXCallbackBase.h" />
+    <ClInclude Include="DXCheckBox.h" />
+    <ClInclude Include="DXDef.h" />
+    <ClInclude Include="DXDropDown.h" />
+    <ClInclude Include="DXEditBox.h" />
+    <ClInclude Include="DXEngine.h" />
+    <ClInclude Include="DXFont.h" />
+    <ClInclude Include="DXHorizontalSliderBar.h" />
+    <ClInclude Include="DXKeyboard.h" />
+    <ClInclude Include="DXListBox.h" />
+    <ClInclude Include="DXListVerticalSlider.h" />
+    <ClInclude Include="DXMouse.h" />
+    <ClInclude Include="DXObjectBase.h" />
+    <ClInclude Include="DXProgressBar.h" />
+    <ClInclude Include="DXText.h" />
+    <ClInclude Include="DXTextBox.h" />
+    <ClInclude Include="DXTexture.h" />
+    <ClInclude Include="DXVariant.h" />
+    <ClInclude Include="DXVerticalSliderBar.h" />
+    <ClInclude Include="DXWindow.h" />
+    <ClInclude Include="GameBase.h" />
+    <ClInclude Include="Handlers.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GameBase.ico" />
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameBase.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
