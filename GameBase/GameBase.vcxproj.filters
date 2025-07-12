@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="DarkTools">
+      <UniqueIdentifier>{b6c1a74c-cb02-45fc-a6bf-e2b485dff0a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXEngine">
+      <UniqueIdentifier>{1bfacdf0-0738-4013-9c18-8105bd6dff02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXEngine\Objects">
+      <UniqueIdentifier>{d13af504-366c-40f7-b959-556faeca9a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXEngine\Objects\Source">
+      <UniqueIdentifier>{92e535d3-a3ce-436e-a895-e169b6bf3250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXEngine\Objects\Header">
+      <UniqueIdentifier>{a57aea9e-14a2-4ac2-8ca2-109e373c4bce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handler">
+      <UniqueIdentifier>{1813c8ad-8548-440d-a341-f71df06a203f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DarkTools\DarkApi.cpp">
+      <Filter>DarkTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DarkTools\DarkColor.cpp">
+      <Filter>DarkTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DarkTools\DarkPoint.cpp">
+      <Filter>DarkTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DarkTools\DarkString.cpp">
+      <Filter>DarkTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DarkTools\DarkTimer.cpp">
+      <Filter>DarkTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DarkTools\DarkXML.cpp">
+      <Filter>DarkTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DarkTools\DarkXMLParser.cpp">
+      <Filter>DarkTools</Filter>
+    </ClCompile>
+    <ClCompile Include="DXEngine.cpp">
+      <Filter>DXEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="DXKeyboard.cpp">
+      <Filter>DXEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="DXMouse.cpp">
+      <Filter>DXEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="DXObjectBase.cpp">
+      <Filter>DXEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTexture.cpp">
+      <Filter>DXEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="DXVariant.cpp">
+      <Filter>DXEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="DXButton.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DXButtonCross.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DXCheckBox.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DXDropDown.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DXEditBox.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DXFont.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DXHorizontalSliderBar.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DXListBox.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DXListVerticalSlider.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DXProgressBar.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DXText.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTextBox.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DXVerticalSliderBar.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DXWindow.cpp">
+      <Filter>DXEngine\Objects\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Handlers.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DarkTools\DarkApi.h">
+      <Filter>DarkTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DarkTools\DarkClass.h">
+      <Filter>DarkTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DarkTools\DarkColor.h">
+      <Filter>DarkTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DarkTools\DarkPoint.h">
+      <Filter>DarkTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DarkTools\DarkPrint.h">
+      <Filter>DarkTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DarkTools\DarkString.h">
+      <Filter>DarkTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DarkTools\DarkTimer.h">
+      <Filter>DarkTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DarkTools\DarkXML.h">
+      <Filter>DarkTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DarkTools\DarkXMLParser.h">
+      <Filter>DarkTools</Filter>
+    </ClInclude>
+    <ClInclude Include="DXCallbackBase.h">
+      <Filter>DXEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DXDef.h">
+      <Filter>DXEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DXEngine.h">
+      <Filter>DXEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DXKeyboard.h">
+      <Filter>DXEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DXMouse.h">
+      <Filter>DXEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DXObjectBase.h">
+      <Filter>DXEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTexture.h">
+      <Filter>DXEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DXVariant.h">
+      <Filter>DXEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DXButton.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DXButtonCross.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DXCheckBox.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DXDropDown.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DXEditBox.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DXFont.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DXHorizontalSliderBar.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DXListBox.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DXListVerticalSlider.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DXProgressBar.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DXText.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTextBox.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DXVerticalSliderBar.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DXWindow.h">
+      <Filter>DXEngine\Objects\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Handlers.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="CMain.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GameBase.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameBase.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

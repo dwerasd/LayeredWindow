@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5BBF5359-B212-4163-8E15-1A0C0FBA40F3}</ProjectGuid>
+    <RootNamespace>GameBase</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Platform)\temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\DarkTools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/Zc:__cplusplus /Zc:threadSafeInit %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\DarkTools\DarkApi.cpp" />
+    <ClCompile Include="..\DarkTools\DarkColor.cpp" />
+    <ClCompile Include="..\DarkTools\DarkPoint.cpp" />
+    <ClCompile Include="..\DarkTools\DarkString.cpp" />
+    <ClCompile Include="..\DarkTools\DarkTimer.cpp" />
+    <ClCompile Include="..\DarkTools\DarkXML.cpp" />
+    <ClCompile Include="..\DarkTools\DarkXMLParser.cpp" />
+    <ClCompile Include="DXEngine.cpp" />
+    <ClCompile Include="DXKeyboard.cpp" />
+    <ClCompile Include="DXMouse.cpp" />
+    <ClCompile Include="DXObjectBase.cpp" />
+    <ClCompile Include="DXTexture.cpp" />
+    <ClCompile Include="DXVariant.cpp" />
+    <ClCompile Include="DXButton.cpp" />
+    <ClCompile Include="DXButtonCross.cpp" />
+    <ClCompile Include="DXCheckBox.cpp" />
+    <ClCompile Include="DXDropDown.cpp" />
+    <ClCompile Include="DXEditBox.cpp" />
+    <ClCompile Include="DXFont.cpp" />
+    <ClCompile Include="DXHorizontalSliderBar.cpp" />
+    <ClCompile Include="DXListBox.cpp" />
+    <ClCompile Include="DXListVerticalSlider.cpp" />
+    <ClCompile Include="DXProgressBar.cpp" />
+    <ClCompile Include="DXText.cpp" />
+    <ClCompile Include="DXTextBox.cpp" />
+    <ClCompile Include="DXVerticalSliderBar.cpp" />
+    <ClCompile Include="DXWindow.cpp" />
+    <ClCompile Include="Handlers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CMain.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\DarkTools\DarkApi.h" />
+    <ClInclude Include="..\DarkTools\DarkClass.h" />
+    <ClInclude Include="..\DarkTools\DarkColor.h" />
+    <ClInclude Include="..\DarkTools\DarkPoint.h" />
+    <ClInclude Include="..\DarkTools\DarkPrint.h" />
+    <ClInclude Include="..\DarkTools\DarkString.h" />
+    <ClInclude Include="..\DarkTools\DarkTimer.h" />
+    <ClInclude Include="..\DarkTools\DarkXML.h" />
+    <ClInclude Include="..\DarkTools\DarkXMLParser.h" />
+    <ClInclude Include="DXCallbackBase.h" />
+    <ClInclude Include="DXDef.h" />
+    <ClInclude Include="DXEngine.h" />
+    <ClInclude Include="DXKeyboard.h" />
+    <ClInclude Include="DXMouse.h" />
+    <ClInclude Include="DXObjectBase.h" />
+    <ClInclude Include="DXTexture.h" />
+    <ClInclude Include="DXVariant.h" />
+    <ClInclude Include="DXButton.h" />
+    <ClInclude Include="DXButtonCross.h" />
+    <ClInclude Include="DXCheckBox.h" />
+    <ClInclude Include="DXDropDown.h" />
+    <ClInclude Include="DXEditBox.h" />
+    <ClInclude Include="DXFont.h" />
+    <ClInclude Include="DXHorizontalSliderBar.h" />
+    <ClInclude Include="DXListBox.h" />
+    <ClInclude Include="DXListVerticalSlider.h" />
+    <ClInclude Include="DXProgressBar.h" />
+    <ClInclude Include="DXText.h" />
+    <ClInclude Include="DXTextBox.h" />
+    <ClInclude Include="DXVerticalSliderBar.h" />
+    <ClInclude Include="DXWindow.h" />
+    <ClInclude Include="Handlers.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GameBase.ico" />
+    <None Include="small.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameBase.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

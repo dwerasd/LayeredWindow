@@ -1,0 +1,215 @@
+﻿<?xml version="1.0"?>
+<GUI>
+    <ColorThemes default="Standard">
+        <Standard>
+            <Window default="Normal">
+                <State string="Normal">
+                    <Color string="Title" r="255" g="255" b="255" a="255"/>
+
+                    <Color string="Board" r="5" g="46" b="74" a="255"/>
+                    <Color string="Line" r="120" g="224" b="255" a="255"/>
+
+                    <Texture string="Titlebar" path="HorizontalBar_Normal.bmp"/>
+                </State>
+                <State string="Minimized">
+                    <Texture string="Titlebar" path="HorizontalBar_Pressed.bmp"/>
+                </State>
+                <State string="Dragging">
+                    <Texture string="Titlebar" path="HorizontalBar_MouseOver.bmp"/>
+                </State>
+            </Window>
+            <CrossButton default="Normal">
+                <State string="Normal">
+                    <Texture string="CrossButton" path="CrossButton_Normal.png"/>
+                </State>
+                <State string="MouseOver">
+                    <Texture string="CrossButton" path="CrossButton_MouseOver.png"/>
+                </State>
+                <State string="Pressed">
+                    <Texture string="CrossButton" path="CrossButton_Pressed.png"/>
+                </State>
+            </CrossButton>
+            <Button default="Normal">
+                <State string="Normal">
+                    <Color string="String" r="171" g="255" b="255" a="255"/>
+                    <Texture string="Button" path="HorizontalBar_Normal.bmp"/>
+                </State>
+                <State string="MouseOver">
+                    <Color string="String" r="255" g="255" b="255" a="255"/>
+                    <Texture string="Button" path="HorizontalBar_MouseOver.bmp"/>
+                </State>
+                <State string="Pressed">
+                    <Texture string="Button" path="HorizontalBar_Pressed.bmp"/>
+                </State>
+            </Button>
+            <ProgressBar default="Normal">
+                <State string="Normal">
+                    <Color string="Inner" r="19" g="80" b="117" a="255"/>
+                    <Color string="Border" r="171" g="255" b="255" a="255"/>
+                    <Color string="String" r="255" g="255" b="255" a="255"/>
+                    
+                    <Texture string="ProgressBar" path="Progress_Normal.bmp"/>
+                </State>
+            </ProgressBar>
+            <EditBox default="Normal">
+                <State string="Normal">
+                    <Color string="Inner" r="19" g="80" b="117" a="255"/>
+                    <Color string="Border" r="171" g="255" b="255" a="255"/>
+                    <Color string="String" r="255" g="255" b="255" a="255"/>
+                    <Color string="Cursor" r="171" g="255" b="255" a="255"/>
+                </State>
+            </EditBox>
+            <DropDown default="Normal">
+                <State string="Normal">
+                    <Color string="Inner" r="19" g="80" b="117" a="255"/>
+                    <Color string="Border" r="171" g="255" b="255" a="255"/>
+                    <Color string="String" r="171" g="255" b="255" a="255"/>
+
+                    <Color string="SelectedInner" r="171" g="255" b="255" a="255"/>
+                    <Color string="SelectedString" r="19" g="80" b="117" a="255"/>
+
+                    <Texture string="Button" path="DownArrow_Normal.bmp"/>
+                </State>
+                <State string="MouseOver">
+                    <Texture string="Button" path="DownArrow_MouseOver.bmp"/>
+                </State>
+                <State string="Pressed">
+                    <Texture string="Button" path="DownArrow_Pressed.bmp"/>
+                </State>
+            </DropDown>
+            <HorizontalSliderBar default="Normal">
+                <State string="Normal">
+                    <Color string="Lines" r="171" g="255" b="255" a="255"/>
+                    <Color string="String" r="171" g="255" b="255" a="255"/>
+
+                    <Texture string="Slider" path="HSlider_Normal.bmp"/>
+                </State>
+                <State string="MouseOver">
+                    <Color string="String" r="255" g="255" b="255" a="255"/>
+                    <Texture string="Slider" path="HSlider_MouseOver.bmp"/>
+                </State>
+                <State string="Pressed">
+                    <Texture string="Slider" path="HSlider_Pressed.bmp"/>
+                </State>
+            </HorizontalSliderBar>
+            <VerticalSliderBar default="Normal">
+                <State string="Normal">
+                    <Color string="Lines" r="171" g="255" b="255" a="255"/>
+                    <Color string="String" r="171" g="255" b="255" a="255"/>
+
+                    <Texture string="Slider" path="VSlider_Normal.bmp"/>
+                </State>
+                <State string="MouseOver">
+                    <Color string="String" r="255" g="255" b="255" a="255"/>
+                    <Texture string="Slider" path="VSlider_MouseOver.bmp"/>
+                </State>
+                <State string="Pressed">
+                    <Texture string="Slider" path="VSlider_Pressed.bmp"/>
+                </State>
+            </VerticalSliderBar>
+            <CheckBox default="Normal">
+                <State string="Normal">
+                    <Color string="Inner" r="19" g="80" b="117" a="255"/>
+                    <Color string="Border" r="171" g="255" b="255" a="255"/>
+                    <Color string="String" r="171" g="255" b="255" a="255"/>
+
+                    <Color string="Cross" r="171" g="255" b="255" a="255"/>
+                </State>
+                <State string="MouseOver">
+                    <Color string="String" r="255" g="255" b="255" a="255"/>
+                </State>
+            </CheckBox>
+            <Text default="Normal">
+                <State string="Normal">
+                    <Color string="String" r="171" g="255" b="255" a="255"/>
+                </State>
+                <State string="MouseOver">
+                    <Color string="String" r="255" g="255" b="255" a="255"/>
+                </State>
+            </Text>
+            <TextBox default="Normal">
+                <State string="Normal">
+                    <Color string="String" r="171" g="255" b="255" a="255"/>
+                    <Color string="Inner" r="19" g="80" b="117" a="255"/>
+                    <Color string="Border" r="171" g="255" b="255" a="255"/>
+
+                    <Texture string="UpArrow" path="UpArrow_Normal.bmp"/>
+                    <Texture string="DownArrow" path="DownArrow_Normal.bmp"/>
+                    <Texture string="Slider" path="VSlider_Normal.bmp"/>
+                </State>
+                <State string="MouseOver">
+                    <Texture string="UpArrow" path="UpArrow_MouseOver.bmp"/>
+                    <Texture string="DownArrow" path="DownArrow_MouseOver.bmp"/>
+                </State>
+                <State string="Pressed">
+                    <Texture string="UpArrow" path="UpArrow_Pressed.bmp"/>
+                    <Texture string="DownArrow" path="DownArrow_Pressed.bmp"/>
+                </State>
+            </TextBox>
+            <ListBox default="Normal">
+                <State string="Normal">
+                    <Color string="String" r="171" g="255" b="255" a="255"/>
+                    <Color string="Inner" r="19" g="80" b="117" a="255"/>
+                    <Color string="Border" r="171" g="255" b="255" a="255"/>
+
+                    <Color string="MouseOverString" r="255" g="255" b="255" a="255"/>
+                </State>
+            </ListBox>
+            <HelperSlider default="Normal">
+                <State string="Normal">
+                    <Color string="Inner" r="19" g="80" b="117" a="255"/>
+                    <Color string="Border" r="171" g="255" b="255" a="255"/>
+
+                    <Texture string="UpArrow" path="UpArrow_Normal.bmp"/>
+                    <Texture string="DownArrow" path="DownArrow_Normal.bmp"/>
+                    <Texture string="Slider" path="VSlider_Normal.bmp"/>
+                </State>
+                <State string="MouseOver">
+                    <Texture string="UpArrow" path="UpArrow_MouseOver.bmp"/>
+                    <Texture string="DownArrow" path="DownArrow_MouseOver.bmp"/>
+                </State>
+                <State string="Pressed">
+                    <Texture string="UpArrow" path="UpArrow_Pressed.bmp"/>
+                    <Texture string="DownArrow" path="DownArrow_Pressed.bmp"/>
+                </State>
+            </HelperSlider>
+        </Standard>
+    </ColorThemes>
+
+    <Font face="Tahoma" size="10">
+        <Color index="0" r="0" g="0" b="0" a="255"/> <!--black-->
+        <Color index="1" r="255" g="255" b="255" a="255"/> <!--white-->
+        <Color index="2" r="0" g="0" b="255" a="255"/> <!--blue-->
+        <Color index="3" r="0" g="255" b="0" a="255"/> <!--green-->
+        <Color index="4" r="255" g="0" b="0" a="255"/> <!--red-->
+        <Color index="5" r="255" g="0" b="128" a="255"/> <!--pink-->
+        <Color index="6" r="255" g="0" b="255" a="255"/> <!--purple-->
+        <Color index="7" r="255" g="150" b="0" a="255"/> <!--orange-->
+        <Color index="8" r="255" g="255" b="0" a="255"/> <!--yellow-->
+        <Color index="9" r="0" g="0" b="128" a="255"/> <!--dark blue-->        
+    </Font>
+    <Cvars>
+        <!-- default titlebar height and sample Cvar -->
+        <Cvar string="Titlebar height" type="number" value="24"/>
+        <Cvar string="Button height" type="number" value="20"/>
+
+        <!-- type can also be "string" or "bool" -->
+    </Cvars>
+    <Windows>
+	<Window absX="0" absY="0" width="200" height="100" name="ExitWindow" string="확인">
+            <Text relX="15" relY="15" string="게임을 종료하시겠습니까?" visible="true" />
+            <Button relX="25" relY="45" width="70" height="20" name="button1" string="OK" visible="true" />
+            <Button relX="105" relY="45" width="70" height="20" name="button2" string="CANCEL" visible="true" />
+        </Window>
+
+        <Window absX="0" absY="0" width="210" height="145" name="LoginWindow" string="로그인" string2="테스트" visible="true">
+            <Text relX="30" relY="22" width="120" string="아이디" visible="true" />
+            <Text relX="15" relY="53" width="120" string="비밀번호" visible="true" />
+            <EditBox relX="90" relY="20" width="100" name="editbox1" tabstop="true" visible="true" />
+            <EditBox relX="90" relY="50" width="100" name="editbox2" tabstop="true" password="true" visible="true" />
+            <Button relX="15" relY="85" width="80" height="20" name="button1" string="확인" tabstop="true" visible="true" />
+            <Button relX="110" relY="85" width="80" height="20" name="button2" string="취소" tabstop="true" visible="true" />
+        </Window>
+
+    </Windows>
+</GUI>
